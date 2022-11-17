@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header{
+    background-color: #2874f0;
+    font-family: 'Lato', sans-serif;
+    padding: 0 2rem 0 2rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    padding: 0 15px;
+}
+.links{
+    display: flex;
+}
+.dropdown{
+    width: 200px;
+    display: none;
+    position: absolute;
+    transition: 0.5s;
+}
+.dropdown li{
+    width: 100%;
+    transition: 0.5s;
+}
+.dropdown li a{
+    display: flex;
+    padding: 7px;
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+    font-family: 'Lato', sans-serif;
+    border-top: 1px solid rgb(169, 167, 167);
+}
+ul li:hover .dropdown{
+    display: block;
+}
+.dropdown li a:hover{
+    background-color: rgb(169, 167, 167);
+    color: white;
+}
+nav ul{
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5px;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-weight: bolder;
+    color: yellow;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    border-radius: 3px;
+    width: 11vw;
+    height: 29px;
+    margin: 0 10px 0 0px;
+    padding: 0 12px;
+    outline: none;
+}
+.search button{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+.btn:hover{
+    background-color: yellow;
+}
+
+/*Slider Section*/
+.slider img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 81vw;
+    margin: 12px auto;
+    overflow: hidden;
+}
+
+/*Card Section*/
+.card{
+    max-width: 91vw;
+    margin: 12px auto;
+    font-family: 'Lato', sans-serif;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 10vw;
+    margin: 0 12px;
+}
+.card h2{
+    font-family: 'Lato', sans-serif;
+    padding-left: 12px;
+    
+}
+.container{
+    min-height: calc(100vh - 60px - 12vh);
+}
+
+/*Footer*/
+footer{
+    padding: 2rem 5rem;
+    background-color: #172337;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 0 3rem 0 0;
+    width: 300px;
+}
+
+footer .col #brandname{
+    margin-bottom: 30px;
+}
+
+.icon i{
+    font-size: 25px;
+    padding: 0 30px 0 0;
+    color: gold;
+    cursor: pointer;
+}
+
+.row img{
+    width: 10rem;
+    border-radius: 10px;
+    height: 3.4rem;
+    border: 2px solid white;
+}
+
+#payment img{
+    width: 20rem;
+    height: 3rem;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+footer h4{
+    padding-bottom: 20px;
+}
+
+footer p{
+    margin: 0 0 10px 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #f2f2f2;
+    margin-bottom: 10px;
+}
+
+footer .follow .icon i:hover{
+    transform: scale(1.1);
+    transition: ease;
+}
+
+footer a:hover{
+    color: gold;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+    background-color: #24385b;
+    margin: 0;
+    padding: 10px;
+}
